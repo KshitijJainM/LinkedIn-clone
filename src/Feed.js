@@ -6,11 +6,11 @@ import CreateIcon from "@material-ui/icons/Create";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Post from "./Post";
 import { db } from "./firebase";
 import firebase from "firebase";
-import { logout, selectUser } from "./features/userSlice";
+import { selectUser } from "./features/userSlice";
 import FlipMove from "react-flip-move";
 function Feed() {
 	const [posts, setPosts] = useState([]);
